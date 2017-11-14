@@ -17,7 +17,7 @@ class Dog
     @@all.each do |instance|
       @@pup_name_array << instance.name
     end
-    print @@pup_name_array
+    puts @@pup_name_array
   end
 
   def self.clear_all
