@@ -7,15 +7,17 @@ class Dog
   def initialize(name)
     @name = name
     @@all << self
-    @@pup_name_array << @name
   end
 
   def name
     @name
   end
-
+  
   def self.all
-    puts @@pup_name_array
+    @@all.each do |instance|
+      @@pup_name_array << instance.name
+    end
+    print @@pup_name_array
   end
 
   def self.clear_all
