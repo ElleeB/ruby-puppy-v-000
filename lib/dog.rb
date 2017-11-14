@@ -2,20 +2,20 @@ class Dog
   attr_accessor :name
 
   @@all = []
+  @@pup_name_array = []
 
   def initialize(name)
     @name = name
     @@all << self
+    @@pup_name_array << @name
   end
 
   def name
     @name
   end
-
+  
   def self.all
-    pup_name_array = []
-    @@all.each {|name| pup_name_array << name}
-    puts pup_name_array
+    puts @@pup_name_array
   end
 
   def self.clear_all
