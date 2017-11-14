@@ -12,4 +12,8 @@ class Dog
     puts PUPPIES
   end
 
+  def self.clear_all
+    @@all.clear
+  end
+
 end
