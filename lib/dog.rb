@@ -13,7 +13,7 @@ class Dog
   def name
     @name
   end
-  
+
   def self.all
     puts @@pup_name_array
   end
