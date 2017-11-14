@@ -12,7 +12,7 @@ class Dog
   def name
     @name
   end
-  
+
   def self.all
     @@all.each do |instance|
       @@pup_name_array << instance.name
